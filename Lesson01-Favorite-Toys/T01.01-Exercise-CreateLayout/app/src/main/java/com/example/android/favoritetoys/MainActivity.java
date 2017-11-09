@@ -19,10 +19,15 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
+   TextView txtMakeSearch,textResult;
+   EditText urlEdit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        urlEdit=(EidtText)findViewById(R.id.txtQuery);
+        txtMakeSearch=(TextView)findViewById(R.id.tv_url_display);
+        textResult=(TextView)findViewById(R.id.tv_githup_sreach_result);
     }
 }
